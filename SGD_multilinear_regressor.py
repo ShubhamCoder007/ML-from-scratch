@@ -40,3 +40,6 @@ class SGDRegressor:
 sgd = SGDRegressor()
 sgd.fit(X_train, y_train,lr=0.2,epochs=1000)
 print(sgd)
+
+y_pred = sgd.predict(X_test)
+r2_score(y_test,y_pred)
